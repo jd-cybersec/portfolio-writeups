@@ -38,7 +38,7 @@ The engagement demonstrated how a series of weaknesses — **IDOR, broken access
 User profile data was accessible via predictable `uid` values.  
 By fuzzing `uid`, multiple user records were enumerated.
 
-![Password Reset Abuse](images/token-abuse.png)
+![Password Reset Abuse](images/admin-enum.png)
 
 ---
 
@@ -46,7 +46,7 @@ By fuzzing `uid`, multiple user records were enumerated.
 Password reset tokens were exposed via a predictable endpoint.  
 Tokens could be replayed with crafted requests to reset passwords for arbitrary users.  
 
-![Admin Enumeration](images/admin-enum.png)
+![Admin Enumeration](images/intruder-fuzz.png)
 
 ---
 
